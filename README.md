@@ -47,6 +47,6 @@ This project is only for reading, also if possible you can downloading for your 
 - Twitter - [@javifullstack](https://twitter.com/javifullstack) Blue Heart
 - Linkedin - [Javier Jaramillo | Systems Engineer | Full-Stack Software Developer](https://www.linkedin.com/in/javier-jaramillo-346b681a1/) :gem:
 
-### ⌨️con ❤️y ☕ por Javier Jaramillo 😊
+### ⌨ ️con ❤  ️y ☕ por Javier Jaramillo 😊
 
 
