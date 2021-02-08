@@ -1,7 +1,7 @@
 # Implement a design with bootstrap 📱 💻 🖥
 
 
-![Project image](https://cdn.dribbble.com/users/32742/screenshots/4282422/bootstrap_category_page_principle_project.gif)
+![Project image](https://www.clickittech.com.mx/wp-content/uploads/2018/02/Bootstrap4-Clickittech.png)
 
 ### Table of content
 
