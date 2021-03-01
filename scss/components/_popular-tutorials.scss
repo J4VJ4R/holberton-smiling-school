@@ -1,0 +1,129 @@
+.cards-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.carousel-inner-1 {
+  padding: 1em;
+}
+
+.carousel-control-prev-1 {
+  position: absolute;
+  right: 100%;
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+  @include breakpoint(xxs-down){
+    display: none;
+  }
+}
+
+.carousel-control-next-1 {
+  left: 100%;
+  position: absolute;
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+  @include breakpoint(xxs-down){
+    display: none;
+  }
+}
+
+.holberton_school-icon-arrow--desktop-color {
+  color: #071629;
+}
+
+.card {
+  margin: 0 0.5em;
+  box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+  border: none;
+  border-radius: 0;
+  display: flex;
+  align-items: center;
+
+  &__img-small {
+    height: to-rem(30);
+    width: to-rem(30);
+  }
+
+  &__img-big {
+    max-width: 100%;
+    max-height: 100%;
+
+    @include breakpoint(sm-up) {
+      height: 11em;
+
+    }
+  }
+
+  &__title {
+    margin-bottom: .75rem;
+    padding-left: to-rem(13);
+    margin: 0;
+    color: $primary-color;
+    font-weight: 700;
+  }
+
+  &__user {
+    padding-left: 0;
+  }
+
+  &__text {
+    font-size: to-rem(14);
+    color: #071629;
+    font-weight: 400;
+  }
+
+  &__img-play {
+    position: absolute;
+    z-index: 900;
+    top: 21%;
+    left: 39%;
+    width: 84px;
+
+    @include breakpoint(sm-up) {
+      top: 10%;
+      left: 28%;
+    }
+
+  }
+  
+}
+
+.stars {
+  display: flex;
+  align-items: center;
+  padding-top: 1rem;
+
+  &__img:nth-child(1) {
+    padding-left: 0;
+  }
+
+  &__img:nth-child(5) {
+    padding-right: 2rem;
+  }
+
+  &__time {
+    color: #C271FF;
+    font-size: 0.875rem;
+  }
+
+}
+.tutorials{
+  padding-top: to-rem(87);
+  padding-bottom: to-rem(75);
+  text-align: center;
+  &__title{
+    font-weight: 300;
+    font-size: to-rem(32);
+    line-height: to-rem(40.32);
+    color: $secondary-color;
+  }
+  &__highlighted{
+    color: $primary-color;
+    font-weight: 700;
+  }
+}
+.carousel-item--float{
+  float: none;
+}

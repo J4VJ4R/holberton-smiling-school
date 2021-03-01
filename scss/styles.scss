@@ -1,5 +1,22 @@
-//header
-@import "components/header";
-//colors
+//normalize
+@import "components/normalize";
+//fonts
+@import "components/fonts";
+//colors and more variables
 @import "components/variables";
-
+//navbar-menu
+@import "components/navbar";
+//icons
+@import "components/icons";
+//section header
+@import "components/header";
+//slider section
+@import "components/slider-carousel-quotes";
+//section most popular tutorials
+@import "components/popular-tutorials";
+//section free membership
+@import "components/free-membership";
+//section footer
+@import "components/footer";
+//section pricing
+@import "./components/pricing"

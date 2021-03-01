@@ -1,0 +1,35 @@
+.carrousel{
+  &__inner{
+    text-align: center;
+    @include breakpoint(md-up){
+      padding-top: to-rem(108);
+    }
+  }
+  &__img{
+    border-radius: 100%;
+    @include breakpoint(md-up){
+      width: to-rem(160);
+      height: to-rem(160);
+    }
+  }
+}
+.container--bg-purpple{
+  background-color: $primary-color;
+  height: to-rem(392);
+}
+.holberton_school-icon-arrow--desktop{
+  padding-top: to-rem(156);
+}
+
+.carousel-item--desktop{
+  display: flex;
+}
+.carousel__text-box{
+  text-align: left;
+  top: 12%;
+    position: absolute;
+    left: 33%;
+}
+.carousel-item{
+  position: relative;
+}

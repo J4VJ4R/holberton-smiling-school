@@ -1,0 +1,75 @@
+.container-fluid--dark{
+  background-color: $secondary-color;
+}
+.group-membership{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.membership{
+  text-align: center;
+  color: white;
+  &__title{
+    padding-top: to-rem(75);
+    font-weight: 300;
+  }
+  &__highlight{
+    color: $primary-color;
+    font-weight: 700;
+    line-height: to-rem(40);
+  }
+  &__button{
+    margin-bottom: to-rem(89);
+  }
+  
+  &__item{
+    padding: to-rem(50) to-rem(60);
+    padding-bottom: 0;
+    @include breakpoint(md-down){
+      max-width: 50%;
+    }
+    @include breakpoint(xs-down){
+      max-width: 100%;
+    }
+    @include breakpoint(md-up){
+      max-width: 25%;
+    }
+  }
+  &__item-title{
+    padding-top: to-rem(26);
+    font-size: to-rem(18);
+  }
+  &__item-text{
+    line-height: to-rem(26);
+    padding-top: to-rem(13);
+    font-size: to-rem(14);
+    
+    @include breakpoint(xs-down){
+      width: 70%;
+      margin: 0 auto;
+    }
+    @include breakpoint(xxs-down){
+      width: 100%;
+    }
+  }
+  &__button{
+    padding-top: to-rem(82);
+    background: none;
+    border: none;
+  }
+  &__link{
+    text-decoration: none !important;
+    color: white;
+    padding: to-rem(13) to-rem(21);
+    background: $primary-color;
+    border-radius: to-rem(32);
+    font-size: to-rem(14);
+    font-weight: 600;
+    line-height: to-rem(17.6);
+    &:hover{
+      color: white;
+      opacity: .9;
+    }
+  }
+}

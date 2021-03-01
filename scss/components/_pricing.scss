@@ -1,0 +1,26 @@
+.buy-button{
+  padding-top: 63px;
+  &__title{
+    margin: 0;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 44px;
+    line-height: 55px;
+    text-align: center;
+    padding-top: 11px;
+  }
+  &__description{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+  }
+}
+.group-buy-button{
+  display: flex;
+  flex-wrap: wrap;
+}

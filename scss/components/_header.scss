@@ -1,9 +1,101 @@
-.hero {
-  background-image: url("https://i.postimg.cc/pLQfQMz3/pic-1.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding-bottom: 1.5rem;
-  max-width: 100%;
-  height: auto;
-  background-position: 37% 50%;
+.title{
+  padding-top: 176px;
+  &__text{
+    position: relative;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 61px;
+    @include breakpoint(md-up){
+      font-size: to-rem(120);
+    }
+  }
+}
+.pros{
+  display: flex;
+  text-align: center;
+  width: 100%;
+  padding: to-rem(14);
+  padding-bottom: to-rem(44);
+  @include breakpoint(md-up){
+    width: 50%;
+  }
+}
+.card-circle{
+  width: 50%;
+  &__img{
+    border-radius: 9rem;
+    width: 80%;
+    @include breakpoint(md-up){
+      width: 50%;
+    }
+  }
+  &__text{
+    font-style: italic;
+    font-weight: 400;
+    width: 100%;
+    color: white;
+    text-align: center;
+  }
+}
+.title__text--small{
+  font-size: 18px;
+  width: 100%;
+}
+.title--padding{
+  padding-top: 10px;
+}
+.subtitle--padding{
+  padding-bottom: to-rem(87);
+}
+.group-pros{
+  @include breakpoint(xxs-up){
+    display: flex;
+  }
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+  padding-bottom: to-rem(97);
+}
+//module pricing
+.price-banner{
+  padding-top: to-rem(163);
+  justify-content: center;
+  &__text{
+  text-align: center;
+  color: white;
+  font-weight: 400;
+  }
+  &__text--big{
+    display: block;
+  }
+  &__img-1{
+    width: 3.2rem;
+  }
+  &__img-2{
+    width: 11rem;
+  }
+}
+.title-big{
+  color: white;
+  display: flex;
+  justify-content: center;
+  font-size: to-rem(60);
+  font-weight: 700;
+  padding-top: to-rem(49);
+  &__text{
+    line-height: to-rem(75.42);
+  }
+}
+.button--pricing{
+  padding-top: to-rem(76);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.button{
+  &__primary{
+    font-size: to-rem(14);
+  }
+  
 }

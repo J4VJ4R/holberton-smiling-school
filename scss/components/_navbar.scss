@@ -1,7 +1,124 @@
-//background navigation
-.bg-light-custom{
-  background-color: #f8f9fa00;
+.container-smile{
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
 }
-.navbar-light .navbar-toggler-icon{
-  background-color: red !important;
+.collapse{
+  &__item{
+    font-weight: bold;
+    color: white !important;
+    text-align: center;
+    font-size: .8rem;
+    &:hover{
+      color: $primary-color !important;
+    }
+  }
+  &__item--align{
+    width: 33.3%;
+    text-align: center;
+    .nav-link{
+      font-weight: bold;
+      color: white;
+      &:hover{
+        color: $primary-color;
+      }
+    }
+  }
+}
+.navbar--light{
+  background-color: transparent;
+  flex-direction: row-reverse;
+  display: flex;
+ 
+}
+.hero{
+  background-image: url("../images/pic_1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 1.5rem;
+  max-width: 100%;
+  height: auto;
+  background-position: 37% 50%;
+  &--new-background{
+    background-image: url(../images/pic_2.jpg);
+  }
+}
+.navbar{
+  position: relative;
+    background-color: transparent;
+    display: flex;
+    z-index: 100;
+    &__logo-smile{
+      top: 1.5rem;
+      display: flex;
+      @include breakpoint(xxs-up){
+        flex-direction: inherit;
+        margin-bottom: 3rem;
+      }
+      @include breakpoint(xxs-down){
+        flex-direction: column;
+      }
+      position: relative;
+    }
+    &__logo-img{
+      margin: 0 auto;
+      width: 37px;
+      height: 30px;
+    }
+    &__logo-letters{
+      @include breakpoint(xxs-up){
+        margin-left: 1rem;
+      }
+      width: 114px;
+      height: 38px;
+    }
+    @include breakpoint(xxs-up){
+      flex-direction: unset;
+    }
+    @include breakpoint(xxs-down){
+    flex-direction: row-reverse;
+  }
+}
+.collapse--ubication{
+  padding: 1.5rem;
+  @include breakpoint(xxs-up){
+    justify-content: flex-end;
+  }
+}
+.navbar-nav--align{
+  margin: 0 auto;
+  width: 80%;
+  flex-direction: row;
+  @include breakpoint(md-up){
+    width: 35%;
+  }
+}
+.button{
+  text-align: center;
+  margin-top: 14px;
+  &__primary{
+    font-weight: 600;
+    padding: 13px 22px 13px 22px;
+    width: 193px;
+    background-color: #C271FF !important;
+    border: none;
+    height: 51px;
+    border-radius: 32px;
+    filter: drop-shadow(0px 2px 20px rgba(0, 0, 0, 0.5));
+    &:hover{
+      opacity: 0.9;
+    }
+  }
+}
+.subtitle{
+  &__text{
+    font-weight: 300;
+    padding-top: 150px;
+    text-align: center;
+    color: white;
+}
+  &__highlighted{
+    color: $primary-color;
+    font-weight: bold;
+  }
 }

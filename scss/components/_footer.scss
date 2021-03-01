@@ -1,0 +1,42 @@
+.container-fluid--footer{
+  background-color: $secondary-color;
+}
+.footer{
+  &__copyright-text{
+    margin: 0;
+  }
+}
+.footer{
+  display: flex;
+  justify-content: center;
+  &__social-media{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
+  &__copyright-text{
+    text-align: center;
+    padding-bottom: to-rem(34);
+    color: white;
+    opacity: .35;
+    font-size: to-rem(12);
+    font-weight: 400;
+    padding-top: to-rem(45);
+  }
+  &__img-1{
+    width: to-rem(60);
+    padding-top: to-rem(50);
+    padding-bottom: to-rem(45);
+    padding-right: to-rem(18);
+  }
+  &__img-2{
+    width: 114px;
+    height: 20;
+    padding-top: to-rem(50);
+    padding-bottom: to-rem(45);
+  }
+
+}
+.container--flex{
+  display: flex;
+}

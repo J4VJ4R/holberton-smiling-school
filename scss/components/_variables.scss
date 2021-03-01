@@ -1,4 +1,43 @@
-//colors
-$primary: #C271FF;
-$secondary: #071629;
-$tertiary: #FFFFFF;
+
+$primary-color: #C271FF;
+$secondary-color: #071629;
+//functions
+@function to-rem($value: 2rem){
+  @return ($value / 16 * 1rem);
+}
+//mixings for responsive
+@mixin breakpoint($class) {
+
+  @if $class == xxs-down {
+   @media (max-width: 576px) { @content; }
+ }
+ 
+ @if $class == xxs-up {
+   @media (min-width: 577px) { @content; }
+ }
+
+ @if $class == xs-down {
+   @media (max-width: 767px) { @content; }
+ }
+
+ @else if $class == sm-up {
+   @media (min-width: 768px) { @content; }
+ }
+
+ @else if $class == md-down {
+   @media (max-width: 992px) { @content; }
+ }
+
+ @else if $class == md-up {
+   @media (min-width: 993px) { @content; }
+ }
+
+ @else if $class == lg-up
+  {
+   @media (min-width: 1200px) { @content; }
+ }
+
+ @else {
+   @warn "Breakpoint mixin supports: xs, sm, md, lg";
+ }
+}
