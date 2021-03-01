@@ -1,4 +1,131 @@
+$icomoon-font-family: "holberton_school-icon" !default;
+$icomoon-font-path: "fonts" !default;
+
+$holberton_school-icon-arrow_1: "\e900";
+$holberton_school-icon-arrow_2: "\e901";
+$holberton_school-icon-arrow_3: "\e902";
+$holberton_school-icon-arrow_4: "\e903";
+$holberton_school-icon-arrow_5: "\e904";
+$holberton_school-icon-check: "\e905";
+$holberton_school-icon-ic_bag: "\e906";
+$holberton_school-icon-ic_cart: "\e907";
+$holberton_school-icon-ic_facebook: "\e908";
+$holberton_school-icon-ic_hearing: "\e909";
+$holberton_school-icon-ic_instagram: "\e90a";
+$holberton_school-icon-ic_laptop: "\e90b";
+$holberton_school-icon-ic_money: "\e90c";
+$holberton_school-icon-ic_music: "\e90d";
+$holberton_school-icon-ic_sound: "\e90e";
+$holberton_school-icon-ic_twitter: "\e90f";
+$holberton_school-icon-ic_video: "\e910";
+$holberton_school-icon-menu: "\e911";
+$holberton_school-icon-search_1: "\e912";
+$holberton_school-icon-search_2: "\e913";
+$holberton_school-icon-star: "\e914";
 //colors
 $primary: #C271FF;
 $secondary: #071629;
-$tertiary: #FFFFFF;
+$tertiary: #979797;
+$white: #FFFFFF;
+$bg-menu-mobile: #9797974d;
+$text_color: #FFFFFF;
+$icon_color: $primary;
+//font weight
+$font-weight-light: 100;
+$font-weight-regular: 400;
+$font-weight-bold: 700;
+$font-weight-semibold: 600;
+$black: #000;
+
+//GENERAL ALIGNS MARGIN TOP
+$mt-1: 1rem;
+$mt-2: 2rem;
+$mt-3: 3rem;
+$mt-4: 4rem;
+$mt-5: 5rem;
+//GENERAL ALIGNS MARGIN BOTTOM
+$mb-1: 1rem;
+$mb-2: 2rem;
+$mb-3: 3rem;
+$mb-4: 4rem;
+$mb-5: 5rem;
+//GENERAL ALIGNS MARGIN RIGHT
+$mr-1: 1rem;
+$mr-2: 2rem;
+$mr-3: 3rem;
+$mr-4: 4rem;
+$mr-5: 5rem;
+//GENERAL ALIGNS MARGIN LEFT
+$ml-1: 1rem;
+$ml-2: 2rem;
+$ml-3: 3rem;
+$ml-4: 4rem;
+$ml-5: 5rem;
+//GENERAL ALIGNS MARGIN LEFT RIGHT TOP BOTTOM
+$m-1: 1rem;
+$m-2: 2rem;
+$m-3: 3rem;
+$m-4: 4rem;
+$m-5: 5rem;
+//GENERAL PADDING TOP
+$pt-1: 1rem;
+$pt-2: 2rem;
+$pt-3: 3rem;
+$pt-4: 4rem;
+$pt-5: 5rem;
+//GENERAL PADDING BOTTOM
+$pb-1: 1rem;
+$pb-2: 2rem;
+$pb-3: 3rem;
+$pb-4: 4rem;
+$pb-5: 5rem;
+//GENERAL PADDING RIGHT
+$pr-1: 1rem;
+$pr-2: 2rem;
+$pr-3: 3rem;
+$pr-4: 4rem;
+$pr-5: 5rem;
+//GENERAL PADDING LEFT
+$pl-1: 1rem;
+$pl-2: 2rem;
+$pl-3: 3rem;
+$pl-4: 4rem;
+$pl-5: 5rem;
+//GENERAL PADDING LEFT RIGHT TOP BOTTOM
+$p-1: 1rem;
+$p-2: 2rem;
+$p-3: 3rem;
+$p-4: 4rem;
+$p-5: 5rem;
+//ALIGNS HEADER
+$section-header-align: center;
+$section-header-title-margin: 17rem 10.5rem;
+//ALIGNS NAVBAR-MENU
+$nav-item-letter-spacing: 4%;
+//ALIGNS LOGO
+$section-logo-aligns: inline-block;
+//fonts
+$nav-item-font-family: Source Sans Pro;
+$font-size-small: 1.2rem;
+$font-size-medium: 1.6rem;
+$font-size-large: 1.8rem;
+$font-size-x-large: 2.4rem;
+$font-size-xx-large: 4.8rem;
+//nav-bar
+$nav-item-display: inline-block;
+//line-height
+$line-height-small: 1.2rem;
+$line-height-base: 1.5rem;
+$line-height-big: 1.8rem;
+$line-height-x-big: 2.5rem;
+$line-height-none: 0;
+//JUSTIFY TEXT
+$justify-text: justify;
+//MARGINS
+$nav-item-margin: 0;
+
+
+
+
+
+

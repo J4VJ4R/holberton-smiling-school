@@ -1,7 +1,179 @@
-//background navigation
-.bg-light-custom{
-  background-color: #f8f9fa00;
+
+.navbar-menu {
+  float: right;
 }
-.navbar-light .navbar-toggler-icon{
-  background-color: red !important;
+
+.nav {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+  display: flex;
 }
+
+.nav .nav-item {
+  font-family: $nav-item-font-family;
+  font-weight: $font-weight-bold;
+  letter-spacing: $nav-item-letter-spacing;
+  display: $nav-item-display;
+  margin-left: $ml-4;
+  margin-top: $mt-1;
+  color: $white;
+}
+
+.nav .nav-link {
+  display: block;
+  color: $white;
+  font-size: 14px;
+
+  &:hover {
+    color: $primary;
+  }
+}
+
+//RESPONSIVE DESIGN FOR MOBILE and TABLET
+@media (max-width: 480px) {
+  .navbar-menu{
+    .nav{
+      .nav-item{
+        margin-left: 0;
+      }
+    }
+  }
+  .nav{
+    .nav-link{
+      text-decoration: none;
+      line-height: 1.75rem;
+    }
+  }
+  .nav-01-header {
+    .section-logo {
+      .header__logo--img{
+        padding-bottom: 0.875rem;
+      }
+      padding-top: 1.5rem;
+      align-items: center;
+      display: block;
+      text-align: center;
+    }
+  }
+  .navbar-menu {
+    flex: 1;
+  }
+  .nav-01-header .menu-icon {
+    cursor: pointer;
+    padding: 2.375rem 0px 0 1.313rem;
+    position: absolute;
+    user-select: none;
+  }
+  .nav-01-header .menu-icon .navicon {
+    background: $white;
+    display: block;
+    width: 1rem;
+    height: .2rem;
+    position: relative;
+    //transition: background .2s ease-out;
+  }
+  .nav-01-header .menu-icon .navicon::before,
+  .nav-01-header .menu-icon .navicon::after {
+    content: "";
+    display: block;
+    width: 179%;
+    height: 100%;
+    position: absolute;
+    background: $white;
+    transition: all .2s ease-out;
+  }
+  .nav-01-header .menu-icon .navicon::before {
+    top: .7rem;
+  }
+  .nav-01-header .menu-icon .navicon::after {
+    top: -.7rem;
+  }
+}
+
+/* menu btn */
+.header .menu-btn {
+  display: none;
+}
+
+.menu-btn:checked ~ .navbar-menu .nav {
+  max-height: 100%;
+  overflow: inherit;
+}
+
+
+.header .menu-btn:checked + .menu-icon .navicon {
+  background: transparent;
+}
+
+.header .menu-btn:checked + .menu-icon .navicon::before {
+  transform: rotate(-45deg);
+}
+
+.header .menu-btn:checked + .menu-icon .navicon::after {
+  transform: rotate(45deg);
+  top: .7rem;
+}
+
+.header .menu-btn:checked + .menu-btn .navicon::before,
+.header .menu-btn:checked + .menu-btn .navicon::after {
+  top: 0;
+}
+
+//RESPONSIVE DESIGN FOR TABLETS AND MOBILE
+@media screen and (max-width: 767px) {
+  //NEW VARIABLES
+  $nav-item-margin: 0;
+  .header .menu-btn:checked + .header{
+    background: yellow;
+  }
+  .header .nav {
+    flex-direction: column;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+  }
+  .nav{
+    padding: 0;
+    margin-top: 6rem;
+    margin-bottom: 2rem;
+  }
+  .nav .nav-link{
+    //line-height: 7rem;
+  }
+  .section-hero {
+    margin: -0.1rem 0;
+  }
+  .hero-homepage {
+    background-position: 85% 0;
+  }
+  .section-hero .section-body {
+  }
+  .header .menu-icon {
+    display: block;
+  }
+
+  .navbar-menu {
+    margin-top: -6rem;
+    flex: 1;
+    width: 100%;
+    //background: $bg-menu-mobile;
+  }
+
+}
+
+//RESPONSIVE DESIGN ONLY MOBILE
+@media (max-width: 480px) {
+  .header-logo {
+    flex-basis: 70%;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .header-logo {
+    flex-basis: 79%;
+  }
+
+}
+
