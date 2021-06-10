@@ -1,5 +1,27 @@
 .buy-button{
   padding-top: 63px;
+  @include breakpoint(sm-down){
+    padding-right: 32px !important;
+  }
+  @include breakpoint(sm-up){
+    padding-right: 3rem !important;
+  }
+  @include breakpoint(xxs-up){
+    &:last-child{
+      padding-right: 63px;
+      @include breakpoint(md-up){
+        padding-right: 97px;
+      }
+    }&:first-child{
+      padding-right: 73px;
+      @include breakpoint(md-up){
+        padding-right: 206px !important;
+      }
+    }
+    @include breakpoint(md-up){
+      padding-right: 6rem !important;
+    }
+  }
   &__title{
     margin: 0;
     font-style: normal;
@@ -23,4 +45,66 @@
 .group-buy-button{
   display: flex;
   flex-wrap: wrap;
+  justify-content: flex-end;
+  @include breakpoint(xxs-down){
+    justify-content: space-around;
+  }
+}
+//section table
+
+.table th, .table td{ 
+  border-top: none !important;
+  border-left: none !important;
+  border-bottom: none !important;
+  @include breakpoint(sm-up){
+    width: 36.3%;
+  }
+}
+.table th{
+  @include breakpoint(xxs-down){
+    padding: 0 !important;
+  }
+}
+.table{
+  
+  &__tr{
+    border-bottom: solid 1px rgba(255, 255, 255, .2) !important;
+  }
+  &__td{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 34px;
+    color: #FFFFFF;
+    padding-top: 36px !important;
+  }
+  &__th{
+    padding-right: 5rem !important;
+    &-1{
+      padding-right: 4rem !important;
+    }
+  }
+  &__img{
+    padding-top: 30px;
+    padding-bottom: 49px;
+  }
+  &__check{
+    text-align: center;
+    @include breakpoint(sm-up){
+      &:nth-child(2){
+        padding-right: 78px !important;
+      }
+      &:last-child{
+        padding-right: 63px !important;
+      }
+    }
+  }
+  &__void{
+    @include breakpoint(xxs-down){
+      width: 20%;
+    }
+  }
+}
+.table__tr:last-child{
+  border-bottom: none !important;
 }

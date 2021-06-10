@@ -108,7 +108,12 @@
     &:hover{
       opacity: 0.9;
     }
+    &--width{
+      width: 162px;
+      padding: 13px 0px 13px 0px;
+    }
   }
+  
 }
 .subtitle{
   &__text{
