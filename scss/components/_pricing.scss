@@ -87,6 +87,7 @@
   &__img{
     padding-top: 30px;
     padding-bottom: 49px;
+    
   }
   &__check{
     text-align: center;
@@ -107,4 +108,88 @@
 }
 .table__tr:last-child{
   border-bottom: none !important;
+}
+//section carousel
+.text-md-right{
+  @include breakpoint(xxs-up){
+    text-align: left !important;
+  }
+  @include breakpoint(md-up){
+    text-align: right !important;
+  }
+}
+.carousel{
+  padding-bottom: 92px;
+  padding-top: to-rem(75);
+  &__left{
+    @include breakpoint(xs-down){
+      padding-top: to-rem(91);
+    }  
+  }
+  &__title{
+    margin: 0;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 34px;
+    color: #FFFFFF;
+  }
+  &__subtitle{
+    font-style: italic;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 34px;
+    color: #FFFFFF;
+  }
+  &__description{
+    margin: 0;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 34px;
+    color: #FFFFFF;
+    padding-bottom: 22px;
+  }
+}
+.carousel-item-pricing{
+  @include breakpoint(xxs-up){
+    padding-top: 120px;
+  }
+}
+.carousel-item{
+  display: flex !important;
+}
+//section faq
+.faq{
+  &__title{
+    font-style: normal;
+    font-weight: 300;
+    font-size: 60px;
+    line-height: 75px;
+    text-align: center;
+    color: #071629;
+    padding-top: to-rem(74);
+    padding-bottom: to-rem(74);
+    margin: 0;
+  }
+  &__subtitle{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    color: #071629;
+    padding: 0 to-rem(17);
+    padding-bottom: to-rem(30);
+    margin: 0;
+  }
+  &__description{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: rgba(7, 22, 41, 0.501584);
+    padding: 0 to-rem(17);
+    margin: 0;
+    padding-bottom: to-rem(146);
+  }
 }

@@ -7,28 +7,47 @@
   }
   &__img{
     border-radius: 100%;
-    @include breakpoint(md-up){
-      width: to-rem(160);
-      height: to-rem(160);
-    }
+    width: to-rem(160);
+    height: to-rem(160);
+    
   }
 }
 .container--bg-purpple{
   background-color: $primary-color;
-  height: to-rem(392);
 }
-.holberton_school-icon-arrow--desktop{
-  padding-top: to-rem(156);
+.holberton_school-icon-arrow_4:before {
+  @include breakpoint(xxs-up){
+    margin-left: -6rem;
+  }
 }
-
+.holberton_school-icon-arrow_3:before {
+  @include breakpoint(xxs-up){
+    margin-right: -7rem;
+  }
+  @include breakpoint(md-up){
+    margin-right: -10rem;
+  }
+}
+.carousel-control-next{
+  @include breakpoint(xxs-down){
+    top: -15rem;
+  }
+}
+.carousel-control-prev{
+  @include breakpoint(xxs-down){
+    top: -15rem;
+  }
+}
 .carousel-item--desktop{
   display: flex;
 }
 .carousel__text-box{
-  text-align: left;
-  top: 12%;
+  @include breakpoint(xxs-up){
+    text-align: left;
+    top: 12%;
     position: absolute;
     left: 33%;
+  }
 }
 .carousel-item{
   position: relative;
