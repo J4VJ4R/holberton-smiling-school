@@ -146,3 +146,11 @@ input::-webkit-input-placeholder{
     display: block;
   }
 }
+//CARDS WRAPPER LATEST VIDEOS
+.cards-wrapper--flex-wrap{
+  flex-wrap: wrap;
+
+  @include breakpoint(md-down){
+    flex-wrap: wrap;
+  }
+}

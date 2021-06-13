@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smile School</title>
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- styles -->
+  <link rel="stylesheet" href="./css/styles.css">
+  <!-- icons icomoons -->
+  <link rel="stylesheet" href="./css/holberton_school-icon/style.css">
+</head>
+
+<body>
+  <!-- SECTION HEADER -->
+  <header class="wrap">
+    <div class="container hero hero--new-background-1">
+      <nav class="navbar navbar-expand-md navbar--light navbar-dark">
+        <a class="navbar-brand col" href="./homepage.html">
+          <div class="navbar__logo-smile">
+            <img class="navbar__logo-img" src="./images/smile_off.png" alt="">
+            <img class="navbar__logo-letters" src="./images/logo.png" alt="">
+          </div>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="holberton_school-icon-menu"></span>
+        </button>
+        <div class="collapse navbar-collapse collapse--ubication" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link collapse__item" href="./courses.html">COURSES</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link collapse__item" href="./pricing.html">PRICING</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link collapse__item" href="#">LOGIN</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="hero__courses">
+        <h1 class="hero__courses-title">« Don’t cry because it’s over. <br>
+          <span class="hero__courses-pink">
+            Smile
+          </span>
+          because it happened. »</h1>
+      </div>
+      <!-- section search -->
+      <section class="search ">
+        <form class="search__form row d-flex ">
+          <div class="form-group col-12 p-0 col-lg-3 col-md-12 mr-2 mb-0">
+            <label class="text-light text-uppercase" for="formGroupExampleInput">KEYWORDS</label>
+            <div class="search__box-input">
+              <input type="text" class="form-control search__input search__input-1 text-white"
+                id="formGroupExampleInput" placeholder="">
+              <p class="search__description search__description-1">Search by keywords</p>
+              <span class="holberton_school-icon-search_1 search__icon"></span>
+            </div>
+          </div>
+          <div class="form-group col-12 col-sm-5 col-lg-3 p-0 mr-2 search__form-group mt-0">
+            <label class="text-light text-uppercase" for="exampleSelect1">TOPIC</label>
+            <div class=" search__input" id="exampleSelect1">
+              <div class="search__select" id="select-1">
+                <div class="search__content">
+                  <p class="search__description">Novice</p>
+                </div>
+                <span class="holberton_school-icon-arrow_5"></span>
+              </div>
+              <div class="opcion-group js-opcion" id="opcion-1">
+                <a href="#" class="opcion">
+                  <div class="contenido-opcion">
+                    <p class="search__option">Novice</p>
+                    <p class="search__option">Intermediate</p>
+                    <p class="search__option">Expert</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="form-group col-12 col-sm-5 col-lg-3 p-0 search__form-group mr-lg-2 mt-0 mr-0">
+            <label class="text-light text-uppercase" for="exampleSelect1">SORT BY</label>
+            <div class=" search__input" id="exampleSelect1">
+              <div class="search__select" id="select-2">
+                <div class="search__content">
+                  <p class="search__description">Most Popular</p>
+                </div>
+                <span class="holberton_school-icon-arrow_5"></span>
+              </div>
+              <div class="opcion-group js-opcion" id="opcion-2">
+                <a href="#" class="opcion">
+                  <div class="contenido-opcion">
+                    <p class="search__option">Most Popular</p>
+                    <p class="search__option">Most Recent</p>
+                    <p class="search__option">Most Viewed</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </form>
+
+      </section>
+    </div>
+  </header>
+  <!-- SECTION MAIN -->
+  <main>
+    <!-- section latest videos -->
+    <section>
+      <!-- title -->
+      <div class="tutorials">
+        <h3 class="tutorials__title">
+          <span class="tutorials__highlighted">
+            Latest
+          </span>
+          videos
+        </h3>
+      </div>
+      <!-- slider most popular tutorial -->
+      <article class="wrap">
+        <div class="">
+          <div class="cards-wrapper cards-wrapper--flex-wrap ">
+            <div class="card mb-5 col-sm-4 col-md-3 col-lg-3 p-0 m-1 ">
+              <img class="card-img-top card__img-big" src="./images/thumbnail_4.jpg" alt="video tutorial">
+              <img class="card__img-play" src="./images/play.png" alt="play">
+              <div class="card-body">
+                <h5 class="card-title">Diagonal Smile</h5>
+                <p class="card__text">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
+                <div class="card-user d-flex card__user">
+                  <img class="rounded-circle card__img-small" src="./images/profile_1.jpg" alt="user smile">
+                  <h5 class="card-title card__title">Phillip Massey</h5>
+                </div>
+                <div class="stars">
+                  <img class="stars__img" src="./images/star_on.png" alt="star">
+                  <img class="stars__img" src="./images/star_on.png" alt="star">
+                  <img class="stars__img" src="./images/star_on.png" alt="star">
+                  <img class="stars__img" src="./images/star_on.png" alt="star">
+                  <img class="stars__img" src="./images/star_off.png" alt="star">
+                  <span class="stars__time">8 min</span>
+                </div>
+              </div>
+            </div>
+            <div class="card mb-5 col-sm-4 col-md-3 col-lg-3 p-0 m-1 ">
+              <img class="card-img-top card__img-big" src="./images/thumbnail_4.jpg" alt="video tutorial">
+              <img class="card__img-play" src="./images/play.png" alt="play">
+              <div class="card-body">
+                <h5 class="card-title">Diagonal Smile</h5>
+                <p class="card__text">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
+                <div class="card-user col-12 d-flex card__user">
+                  <img class="rounded-circle card__img-small" src="./images/profile_1.jpg" alt="user smile">
+                  <h5 class="card-title card__title">Phillip Massey</h5>
+                </div>
+                <div class="stars">
+                  <img class="stars__img" src="./images/star_on.png" alt="star">
+                  <img class="stars__img" src="./images/star_on.png" alt="star">
+                  <img class="stars__img" src="./images/star_on.png" alt="star">
+                  <img class="stars__img" src="./images/star_on.png" alt="star">
+                  <img class="stars__img" src="./images/star_off.png" alt="star">
+                  <span class="stars__time">8 min</span>
+                </div>
+              </div>
+            </div>
+            <div class="card mb-5 col-sm-4 col-md-3 col-lg-3 p-0 m-1 ">
+              <img class="card-img-top card__img-big" src="./images/thumbnail_4.jpg" alt="video tutorial">
+              <img class="card__img-play" src="./images/play.png" alt="play">
+              <div class="card-body">
+                <h5 class="card-title">Diagonal Smile</h5>
+                <p class="card__text">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
+                <div class="card-user col-12 d-flex card__user">
+                  <img class="rounded-circle card__img-small" src="./images/profile_1.jpg" alt="user smile">
+                  <h5 class="card-title card__title">Phillip Massey</h5>
+                </div>
+                <div class="stars">
+                  <img class="stars__img" src="./images/star_on.png" alt="star">
+                  <img class="stars__img" src="./images/star_on.png" alt="star">
+                  <img class="stars__img" src="./images/star_on.png" alt="star">
+                  <img class="stars__img" src="./images/star_on.png" alt="star">
+                  <img class="stars__img" src="./images/star_off.png" alt="star">
+                  <span class="stars__time">8 min</span>
+                </div>
+              </div>
+            </div>
+            <div class="card mb-5 col-sm-4 col-md-3 col-lg-3 p-0 m-1 ">
+              <img class="card-img-top card__img-big" src="./images/thumbnail_4.jpg" alt="video tutorial">
+              <img class="card__img-play" src="./images/play.png" alt="play">
+              <div class="card-body">
+                <h5 class="card-title">Diagonal Smile</h5>
+                <p class="card__text">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
+                <div class="card-user col-12 d-flex card__user">
+                  <img class="rounded-circle card__img-small" src="./images/profile_1.jpg" alt="user smile">
+                  <h5 class="card-title card__title">Phillip Massey</h5>
+                </div>
+                <div class="stars">
+                  <img class="stars__img" src="./images/star_on.png" alt="star">
+                  <img class="stars__img" src="./images/star_on.png" alt="star">
+                  <img class="stars__img" src="./images/star_on.png" alt="star">
+                  <img class="stars__img" src="./images/star_on.png" alt="star">
+                  <img class="stars__img" src="./images/star_off.png" alt="star">
+                  <span class="stars__time">8 min</span>
+                </div>
+              </div>
+            </div>
+            <div class="card mb-5 col-sm-4 col-md-3 col-lg-3 p-0 m-1 ">
+              <img class="card-img-top card__img-big" src="./images/thumbnail_4.jpg" alt="video tutorial">
+              <img class="card__img-play" src="./images/play.png" alt="play">
+              <div class="card-body">
+                <h5 class="card-title">Diagonal Smile</h5>
+                <p class="card__text">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
+                <div class="card-user col-12 d-flex card__user">
+                  <img class="rounded-circle card__img-small" src="./images/profile_1.jpg" alt="user smile">
+                  <h5 class="card-title card__title">Phillip Massey</h5>
+                </div>
+                <div class="stars">
+                  <img class="stars__img" src="./images/star_on.png" alt="star">
+                  <img class="stars__img" src="./images/star_on.png" alt="star">
+                  <img class="stars__img" src="./images/star_on.png" alt="star">
+                  <img class="stars__img" src="./images/star_on.png" alt="star">
+                  <img class="stars__img" src="./images/star_off.png" alt="star">
+                  <span class="stars__time">8 min</span>
+                </div>
+              </div>
+            </div>
+            <div class="card mb-5 col-sm-4 col-md-3 col-lg-3 p-0 m-1 ">
+              <img class="card-img-top card__img-big" src="./images/thumbnail_4.jpg" alt="video tutorial">
+              <img class="card__img-play" src="./images/play.png" alt="play">
+              <div class="card-body">
+                <h5 class="card-title">Diagonal Smile</h5>
+                <p class="card__text">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
+                <div class="card-user col-12 d-flex card__user">
+                  <img class="rounded-circle card__img-small" src="./images/profile_1.jpg" alt="user smile">
+                  <h5 class="card-title card__title">Phillip Massey</h5>
+                </div>
+                <div class="stars">
+                  <img class="stars__img" src="./images/star_on.png" alt="star">
+                  <img class="stars__img" src="./images/star_on.png" alt="star">
+                  <img class="stars__img" src="./images/star_on.png" alt="star">
+                  <img class="stars__img" src="./images/star_on.png" alt="star">
+                  <img class="stars__img" src="./images/star_off.png" alt="star">
+                  <span class="stars__time">8 min</span>
+                </div>
+              </div>
+            </div>
+            <div class="card mb-5 col-sm-4 col-md-3 col-lg-3 p-0 m-1 ">
+              <img class="card-img-top card__img-big" src="./images/thumbnail_4.jpg" alt="video tutorial">
+              <img class="card__img-play" src="./images/play.png" alt="play">
+              <div class="card-body">
+                <h5 class="card-title">Diagonal Smile</h5>
+                <p class="card__text">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
+                <div class="card-user col-12 d-flex card__user">
+                  <img class="rounded-circle card__img-small" src="./images/profile_1.jpg" alt="user smile">
+                  <h5 class="card-title card__title">Phillip Massey</h5>
+                </div>
+                <div class="stars">
+                  <img class="stars__img" src="./images/star_on.png" alt="star">
+                  <img class="stars__img" src="./images/star_on.png" alt="star">
+                  <img class="stars__img" src="./images/star_on.png" alt="star">
+                  <img class="stars__img" src="./images/star_on.png" alt="star">
+                  <img class="stars__img" src="./images/star_off.png" alt="star">
+                  <span class="stars__time">8 min</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+  </main>
+  <!-- js for Bootstrap -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer"></script>
+  <script>
+    $(document).ready(function () {
+      $('#select-1').on('click', function () {
+        $('#opcion-1').toggleClass('show')
+      })
+      $('#select-2').on('click', function () {
+        $('#opcion-2').toggleClass('show')
+      })
+    })
+  </script>
+</body>
+
+</html>

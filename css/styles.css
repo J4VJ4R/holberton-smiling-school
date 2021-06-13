@@ -966,4 +966,10 @@ input::-webkit-input-placeholder {
   .show .search__option {
     display: block; }
 
+.cards-wrapper--flex-wrap {
+  flex-wrap: wrap; }
+  @media (max-width: 992px) {
+    .cards-wrapper--flex-wrap {
+      flex-wrap: wrap; } }
+
 /*# sourceMappingURL=styles.css.map */
