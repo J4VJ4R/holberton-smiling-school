@@ -1,0 +1,148 @@
+//section header
+.hero{
+  &__courses{
+    @include breakpoint(xxs-down){
+      display: none;
+    }
+    &-title{
+      font-family: Coiny;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 32px;
+      line-height: 35px;
+      text-align: center;
+      color: #FFFFFF;
+    }
+    &-pink{
+      color: $primary-color;
+      margin: 0;
+      padding-bottom: to-rem(51);
+    }
+  }
+}
+//section search
+.search{
+  background-color: $primary-color;
+  padding: 2rem;
+  margin: 0 -1rem;
+  @include breakpoint(xxs-down){
+    margin-top: 27px;
+  }
+  &__input{
+    border-radius: 3px 3px 0px 0px;
+    border-bottom: solid 1px white;
+    &-1{
+      background: #FFFFFF;
+      mix-blend-mode: normal;
+      opacity: 0.25;
+      height: 51px;
+    }
+  }
+  &__form{
+    padding: 22px;
+    justify-content: space-evenly;
+    @include breakpoint(md-down){
+      justify-content: space-between;
+    }
+  }
+  &__box-input{
+    border-bottom: solid 1px white;
+    position: relative;
+    cursor: pointer;
+  }
+  &__icon{
+    position: absolute;
+    top: 14px;
+    left: 13px;
+    bottom: 17px !important;
+    
+  }
+  &__form-group{
+    margin: 0;
+    @include breakpoint(xxs-down){
+      margin-top: 19px !important;
+    }
+  }
+  &__content{
+    position: relative;
+  }
+  &__description{
+    font-style: normal;
+    font-weight: 300;
+    font-size: 23px;
+    line-height: 29px;
+    color: #FFFFFF;
+    margin: 0;
+    background-color: rgba(255, 255, 255, .2);
+    padding-top: 9px;
+    padding-bottom: 13px;
+    padding-left: 16px;
+    border-radius: 3px 3px 0px 0px;
+    cursor: pointer;
+    &-1{
+      background-color: initial;
+      position: absolute;
+      top: 0px;
+      left: 55px;
+      cursor: pointer;
+    }
+  }
+  &__option{
+    color: black;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 23px;
+    line-height: 29px;
+    padding-left: 16px;
+    display: none;
+    &:hover{
+      color: $primary-color;
+    }
+  }
+}
+.holberton_school-icon-arrow_5:before {
+  content: "\e904";
+  color: white;
+  position: absolute;
+  top: 52px;
+  right: 30px;
+  cursor: pointer;
+}
+.holberton_school-icon-search_1:before {
+  content: "\e912";
+  color: white;
+  font-size: 25px;
+}
+input::-webkit-input-placeholder{
+  font-style: normal;
+  font-weight: 300;
+  font-size: 23px;
+  line-height: 29px;
+  color: #FFFFFF;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+  padding-top: 9px;
+  padding-bottom: 13px;
+  
+}
+.search__input-1::-webkit-input-placeholder{
+  padding-left: 55px;
+}
+.opcion-group{
+  background-color: white;
+  padding: 0px 0;
+  visibility: hidden;
+  transition: all .1s ease-in;
+  position: absolute;
+  width: 100%;
+}
+.opcion{
+  text-decoration: none !important;
+}
+.show{
+  visibility: visible;
+  padding: 9px 0;
+  .search__option{
+    display: block;
+  }
+}

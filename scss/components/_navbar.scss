@@ -41,6 +41,9 @@
   background-position: 37% 50%;
   &--new-background{
     background-image: url(../images/pic_2.jpg);
+    &-1{
+    background-image: url(../images/pic_3.jpg);
+    }
   }
 }
 .navbar{
@@ -71,6 +74,7 @@
       }
       width: 114px;
       height: 38px;
+      margin: 0 auto;
     }
     @include breakpoint(xxs-up){
       flex-direction: unset;
